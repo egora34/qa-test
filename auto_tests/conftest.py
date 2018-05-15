@@ -13,7 +13,6 @@ driver = webdriver.Chrome()
 
 @pytest.fixture(scope="class", autouse=True)
 def resource_a_setup(request):
-    print('8622634' * 12)
     driver.maximize_window()
     request.cls.driver = driver
     
