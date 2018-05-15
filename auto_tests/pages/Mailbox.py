@@ -42,7 +42,9 @@ class MailboxFolders(Base):
 class Letter(Base):
     @property
     def subject(self):
-        return Base.element(self, LETTER_SUBJECT).text
+        subj = Base.element(self, LETTER_SUBJECT).text
+        subj = subj.replace(Base.element(self, LETTER_BODY).text, '')
+        return subj
 
 
 class MailboxHeader(Base):
