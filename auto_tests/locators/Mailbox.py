@@ -20,6 +20,7 @@ SENT_LETTERS = Locator(By.CLASS_NAME, 'b-datalist_letters_to')
 
 LETTER = Locator(By.CLASS_NAME, 'b-datalist__item')
 LETTER_SUBJECT = Locator(By.CLASS_NAME, 'b-datalist__item__subj')
+LETTER_BODY = Locator(By.CLASS_NAME, 'b-datalist__item__subj__snippet')
 
 NEW_MAIL_CONTAINER = Locator(By.ID, 'b-compose')
 
